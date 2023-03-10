@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+        <label for="email">E-mail</label>
+        <input type="email" name="email">
+        <label for="password">Password</label>
+        <input type="password" name="password">
+        <label for="first_name">Nome</label>
+        <input type="text" name="first_name" pattern="[A-za-z]+">
+        <label for="last_name">Cognome</label>
+        <input type="text" name="last_name" pattern="[A-za-z]+">
+        <label for="date_birth">Data di nascita</label>
+        <input type="date" name="date_birth" max="2023-03-09">
+        <label for="phone_number">Numero di telefono</label>
+        <input type="tel" name="phone_number" pattern="[0-9]" maxlength="10">
+        </br>
+        <select>
+            <label for="your_plan">Scegli il tuo piano:</label>
+            <option value="free_plan">Piano gratuito</option>
+            <option value="starters_plan">Piano principianti (10€)</option>
+            <option value="advanced_plan">Piano avanzato (20€)</option>
+            <option value="expert_plan">Piano esperti (25€)</option>
+        </select>
+        </br>
+        <input type="checkbox" name="pro_plan">
+        <label for="pro_plan">Piano pro</label>
+        <label for="cc_number">Numero carta di credito</label>
+        <input type="tel" name="cc_number" pattern="[0-9]" minlength="1" maxlength="16">
+        <label for="cvc_number">CVC</label>
+        <input type="tel" name="cvc_number" pattern="[0-9]" minlength="1" maxlength="16">
+        <label for="expiration_date">Data di scadenza</label>
+        <input type="date" name="expiration_date" min="2023-03-11">
+        <label for="billing_address">Indirizzo di fatturazione</label>
+        <input type="text" name="billing_address">
+    </form>
+    <button>Submit</button>
+  </body>
+</html>
