@@ -75,6 +75,11 @@ button{
   border-radius:3px;
 }
 
+button:hover{
+  background-color: green;
+  color:white;
+}
+
 img{
   float:right;
   padding:5px;
