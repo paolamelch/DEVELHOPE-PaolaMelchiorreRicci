@@ -1,0 +1,24 @@
+.exercise {
+  border: 1px solid red;
+}
+.exercise .exercise-title {
+  color: green;
+  border-bottom: 2px solid blue;
+  margin: 20px 320px 20px 305px;
+}
+.exercise section {
+  display: flex;
+  padding: 10px;
+}
+.exercise article {
+  padding: 10px;
+  border: 2px solid green;
+  width: 250px;
+  height: 100px;
+}
+.exercise section article:nth-child(odd) {
+  color: blue;
+}
+.exercise section article:nth-child(even) {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
