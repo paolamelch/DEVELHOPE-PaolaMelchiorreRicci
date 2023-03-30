@@ -1,1 +1,44 @@
-/*# sourceMappingURL=style.css.map */
+.exercise {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.exercise .exercise-title {
+  border: 2px solid white;
+  color: green;
+  border-color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid blue;
+  width: 230px;
+}
+.exercise section {
+  display: flex;
+  margin: 10px;
+}
+
+.article-style1 {
+  border: 2px solid green;
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.article-style2 {
+  border: 2px solid green;
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer {
+  border: 2px solid green;
+  color: blue;
+  border-color: green;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */
