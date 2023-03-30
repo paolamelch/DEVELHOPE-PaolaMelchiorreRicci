@@ -1,0 +1,45 @@
+@use "module.scss" as m;
+@use "functions" as f;
+
+@mixin article-style($color, $border-color, $font-size) {
+  border: 2px solid $border-color;
+  color: $color;
+  border-color: $border-color;
+  font-size: $font-size;
+  text-align: center;
+}
+
+.exercise {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    @include article-style(m.$color2, m.$color4, f.font(1.5rem));
+    border-bottom: 2px solid m.$color3;
+    flex: 1;
+  }
+  &-subtitle{
+    padding: 1rem;
+    border: 2px solid m.$color1;
+    width: 250px;
+    @extend .exercise-title
+}
+}
+section {
+  display: flex;
+  margin: 10px;
+  .article-style1 {
+    @include article-style(m.$color3, m.$color2, f.font(1rem));
+  }
+  .article-style2 {
+    @include article-style(m.$color1, m.$color2, f.font(1rem));
+  }
+
+}
+
+.footer {
+    @include article-style(m.$color3, m.$color2, f.font(1.5rem));
+    padding: 10px;
+  }
