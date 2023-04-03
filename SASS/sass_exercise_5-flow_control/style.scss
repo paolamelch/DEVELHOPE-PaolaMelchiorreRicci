@@ -1,0 +1,89 @@
+@use "module.scss" as m;
+@use "functions" as f;
+@use "sass:color";
+@use "sass:map";
+
+@mixin article-style($color, $border-color, $font-size) {
+  border: f.font(2px) solid $border-color;
+  color: $color;
+  border-color: $border-color;
+  font-size: $font-size;
+  text-align: center;
+}
+
+.exercise {
+  border: f.font(2px) solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    @include article-style(m.$color2, m.$color4, f.font(24px));
+    border-bottom: f.font(2px) solid m.$color3;
+    flex: 1;
+  }
+  &-subtitle {
+    padding: 1rem;
+    border: 2px solid m.$color1;
+    width: f.font(250px);
+    @extend .exercise-title;
+  }
+}
+section {
+  display: flex;
+  margin: f.font(10px);
+  .article-style1 {
+    @include article-style(m.$color3, m.$color2, f.font(16px));
+  }
+  .article-style2 {
+    @include article-style(m.$color1, m.$color2, f.font(16px));
+  }
+}
+
+.boxes {
+  display: flex;
+  gap: f.font(12px);
+  @for $index from 1 to 20 {
+    div:nth-child(#{$index}) {
+      background-color: darken(white, calc($index * 5%));
+      color: lighten(black, calc($index * 5%));
+
+      @if $index == 10 {
+        background-color: m.$color3;
+        color: m.$color1;
+      }
+    }
+  }
+}
+
+$sizes: 1rem, 2rem, 3rem;
+
+@each $size in $sizes {
+  @if $size == 1rem {
+    .fs-1rem {
+      border: f.font(1px) solid m.$color1;
+      width: f.font(45px);
+      height: f.font(45px);
+      font-size: $size;
+    }
+  } @else if $size == 2rem {
+    .fs-2rem {
+      border: f.font(1px) solid m.$color1;
+      width: f.font(45px);
+      height: f.font(45px);
+      font-size: $size;
+    }
+  } @else {
+    .fs-3rem {
+      border: f.font(1px) solid m.$color1;
+      width: f.font(45px);
+      height: f.font(45px);
+      font-size: $size;
+    }
+  }
+}
+
+.footer {
+  @include article-style(m.$color3, m.$color2, f.font(24px));
+  padding: f.font(10px);
+}
