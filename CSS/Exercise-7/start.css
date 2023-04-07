@@ -1,0 +1,101 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:75px 150px 75px 75px;
+    grid-template-areas: 
+    "green green green green green green"
+    "yellow yellow red red blue blue"
+    "yellow yellow red red blue blue"
+    "orange orange orange orange blue blue"
+    ;
+    gap: 20px;
+}
+
+#green{
+    grid-area:green;
+    background-color: #8ffda7;
+}
+
+#yellow{
+    grid-area:yellow;
+    background-color:#ffff92;
+}
+
+#numbers{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(10px, 100px));
+    grid-template-rows: 50px 50px;
+    grid-template-areas:
+    "one two"
+    "three four";
+    gap: 15px;
+    list-style-type: none;
+}
+
+#numbers li{
+    padding: 15px;
+    background-color: white;
+}
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area:two;
+}
+
+#three{
+    grid-area:three;
+}
+
+#four{
+    grid-area:four;
+}
+
+#orange{
+    grid-area:orange;
+    background-color: #ffc788;
+}
+
+#red{
+    grid-area:red;
+    background-color:#ff919c;
+}
+
+#letters{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(10px, 100px));
+    grid-template-rows: 50px 50px;
+    grid-template-areas:
+    "a b"
+    "c d";
+    gap: 15px;
+    list-style-type: none;
+}
+#letters li{
+    padding: 15px;
+    background-color: white;
+}
+
+
+#blue{
+    grid-area:blue;
+    background-color: #98d2ff;
+}
+
+#a{
+    grid-area: a;
+}
+
+#b{
+    grid-area: b;
+}
+
+#c{
+    grid-area: c;
+}
+
+#d{
+    grid-area: d;
+}

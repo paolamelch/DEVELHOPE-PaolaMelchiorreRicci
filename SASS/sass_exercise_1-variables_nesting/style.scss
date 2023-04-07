@@ -1,0 +1,29 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+.exercise {
+  border: 1px solid $color-primary;
+
+  .exercise-title {
+    color: $color-tertiary;
+    border-bottom: 2px solid $color-secondary;
+    margin: 20px 320px 20px 305px;
+  }
+  section {
+    display: flex;
+    padding: 10px;
+  }
+  article {
+    padding: 10px;
+    border: 2px solid $color-tertiary;
+    width: 250px;
+    height: 100px;
+  }
+  section article:nth-child(odd) {
+    color: $color-secondary;
+  }
+  section article:nth-child(even) {
+    color: $color-primary;
+  }
+}

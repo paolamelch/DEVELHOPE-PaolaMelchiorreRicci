@@ -1,0 +1,88 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30px 40px 40px 40px 40px 40px;
+    border-radius: 10px;
+}
+
+.zero{
+    grid-column: span 4;
+    font-size: 20px;
+    text-align: end;
+    padding: 5px;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.equal{
+    grid-row: span 4;
+    text-align: center;
+    padding-top: 60px;
+    background-color:rgb(177, 80, 80);
+    border-bottom-right-radius: 7px;
+    border-left: 1px solid gray;
+}
+
+.second-row{
+    background-color: aliceblue;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    padding: 10px;
+}
+.third-row{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+.fourth-row{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+
+}
+.fifth-row{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+.sixth-row{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+#number1{
+    border-right: 1px solid gray;
+}
+#number2{
+    border-right: 1px solid gray; 
+}
+#number3{
+    border-right: 1px solid gray; 
+}
+#number4{
+    border-right: 1px solid gray;
+}
+#number5{
+    border-right: 1px solid gray;
+}
+#number6{
+    border-right: 1px solid gray;
+}
+#number7{
+    border-right: 1px solid gray;
+}
+#number8{
+    border-right: 1px solid gray;
+}
+#number9{
+    border-right: 1px solid gray;
+}
+#number10{
+    border-right: 1px solid gray;
+}
+#number11{
+    border-right: 1px solid gray;
+}
