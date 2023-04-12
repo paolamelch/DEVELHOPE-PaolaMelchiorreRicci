@@ -12,6 +12,5 @@ const order = {
   } 
 }
 
-for( [city] in order){
-  console.log('city is defined');
-}
+const cityName = order.customer.address?.city;
+console.log("city is not defined");
