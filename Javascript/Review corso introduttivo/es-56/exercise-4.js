@@ -57,3 +57,4 @@ const notes = [
   },
 ];
 
+console.log(uncompletedNotes(notes));

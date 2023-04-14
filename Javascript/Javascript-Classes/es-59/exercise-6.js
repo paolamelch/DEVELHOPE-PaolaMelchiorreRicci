@@ -24,7 +24,7 @@ class AreaCalculator{
     } else if (value instanceof Rectangle){
       this.Area = value.width * value.height;
     } else if (value instanceof Circle){
-      this.Area = Math.PI * value.radius * lato.radius;
+      this.Area = Math.PI * value.radius * value.radius;
     }
     return this.Area;
   }
