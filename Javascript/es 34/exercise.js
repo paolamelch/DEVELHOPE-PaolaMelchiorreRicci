@@ -1,0 +1,2 @@
+function printAsyncName(callback, name) {
+}

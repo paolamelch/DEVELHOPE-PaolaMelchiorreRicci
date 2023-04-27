@@ -9,12 +9,12 @@ class Person {
   toJson() {
     return JSON.stringify(this);
   }
-
+  
   static fromJson(){
-    return JSON.parse(json);
+    return new Person(json["id"],json["firstName"],json["lastName"],json["age"])
   }
 }
 
-const json = '{"id":1,"firstName":"Mario","lastName":"Rossi","age":25}';
+const json = JSON.parse('{"id":1,"firstName":"Mario","lastName":"Rossi","age":25}') ;
 const developer = Person.fromJson(json);
-console.log(developer);
+console.log(developer instanceof Person);
