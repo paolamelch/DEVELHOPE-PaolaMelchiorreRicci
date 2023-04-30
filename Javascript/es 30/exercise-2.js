@@ -17,4 +17,4 @@ class Person {
 
 const json = JSON.parse('{"id":1,"firstName":"Mario","lastName":"Rossi","age":25}') ;
 const developer = Person.fromJson(json);
-console.log(developer instanceof Person);
+console.log(developer);
